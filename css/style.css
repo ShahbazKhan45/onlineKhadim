@@ -1,0 +1,521 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  Geneva, Tahoma, sans-serif;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+li{list-style: none;}
+/********************Header******************/
+.nav-icons{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    text-align: center;  
+    color: white;
+    font-weight: bold;
+    line-height: 1.3;
+}
+.nav-icons .one{
+   width: 250px;
+    flex: 0.5;
+    margin: 10px;
+}
+.nav-icons .two{
+   width: 250px;
+    flex: 1;
+    margin: 10px;
+}
+.nav-icons .three{
+    width: 250px;
+    flex: 0.5;
+    margin: 10px;
+}
+.nav-icons .one a i{
+    padding: 10px;
+    color:white !important;
+    font-weight: bold;
+}
+@media only screen and (min-width: 770px) {
+  .one ,.two, .three{
+    width: 250px;
+  }
+}
+
+
+@media only screen and (min-width: 720px) {
+    .one ,.two{
+      width: 350px;
+    }
+  }
+  @media only screen and (min-width: 580px) {
+    .one,.two{
+      width: 800px;
+    }
+  }
+
+  .logo{
+    width:130px;
+    height:100px;
+    margin-top: -30px;
+  }
+ body{
+   opacity: 0.8;
+ }
+  header{
+    width:100%;
+    height: 100vh;
+    border:2px solid #363636;
+   background-image: linear-gradient(rgba(80, 79, 78, 0.329),#f5ad65),url("../images/bg-img/6.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0 75%,0 0 );
+    position: relative;
+  }
+  header:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom:0%;
+    left: 0%;
+    right: 0%;
+    opacity: 0.3;
+    z-index: -1;
+    background-image: linear-gradient(rgba(80, 79, 78, 0.329),#f5ad65);
+
+  }
+  /* .navbar-icons{
+    width:97%;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+  }*/
+  .navbar-fixed-top{
+    width:96.5%;
+    position: fixed;
+    top: auto;
+    z-index: -1;
+  } 
+
+nav{
+    height:10%;
+  }
+  nav:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom:0%;
+    left: 0%;
+    right: 0%;
+    opacity: 0.3;
+    z-index: -1;
+    background-image: linear-gradient(rgba(80, 79, 78, 0.329),#f5ad65);
+  }
+  #navText li a {
+    color: white !important;
+    font-weight: bold;
+    z-index: -1;
+  }
+  #navText li a:hover{
+    color: white !important;
+    font-weight: bold;
+    border: 5px solid #f5ad65;
+    border-radius: 10px;
+  }
+  .navbar-toggler{
+
+    border: 5px solid #f5ad65;
+    margin-top: -40px;
+  }
+  .drop-div{
+    background-image: linear-gradient(rgba(80, 79, 78, 0.329),#f5ad65);
+    border-radius: 5px;
+    opacity: 0.7;
+  }
+
+  .drop-div a:hover{
+    background-image: linear-gradient(rgba(80, 79, 78, 0.329),#f5ad65);
+    color:white;
+    border: 5px solid #f5ad65;
+    opacity: 1 !important;
+  }
+
+  .head-sec{
+    width:100%; 
+    height: inherit;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 150px;
+    position: relative;
+  }
+  .cent-div{
+    width: 100%;
+    height:auto;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    -ms-transform: translate(-50% ,-50%);
+   -webkit-transform: translate(-50% ,-50%);
+
+  }
+
+  /****************Header Section End********************/
+
+  /****************Three Extra Div****************/
+  .khadim-cat{
+    text-align: center;
+    color:#794510;
+  }
+.boxshadow{
+  height: 380px;
+    box-shadow: 4px 6px 7px #794510;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+    transition: 0.3s;
+    color:#794510;
+  }
+  .boxshadow:hover{
+    box-shadow: 4px 6px 7px gray;
+    transform:translateY(-20px);
+  }
+  .boxshadow h3{
+    padding: 7px;
+  }
+  .line{
+    color: #794510;
+    font-size: bold;
+    margin-top: -20px; 
+  }
+  .home-pic{
+    width: 100%;
+    height:200px;
+    margin-top: 2%;
+  }
+  .font-size{
+    font-size: 0.7rem;
+    color:#794510;
+    padding:10px;
+  }
+  /********************Three Extra Div End*****************/
+  /************Home Delivery *****************/
+  .home{
+    margin-top: 50px;
+    text-align: center;
+    color: #794510;
+  }
+  .home P{
+    font-size: 15px;
+  }
+  .home p i{
+    color:#a86a2c;
+    font-size: 1.5rem;
+  }
+  .img-home{
+    width: 100%;
+    height: 90%;
+  }
+
+  /* **********Home Delivery End**************/
+  /****Customer Satisfiction****/
+  .cust-satisfication{
+    background-image: url('../images/bg-img/4.png');
+    color: white;
+    background-attachment: fixed;
+    font-weight: bold;
+  }
+  .cust-para{
+    border: 2px solid  #cb8670;
+    padding: 20px;
+    text-align: center;
+    margin-left: 50%;
+    background-color: #663b10;
+    opacity: 0.8;
+  }
+  .cust-para h2, p{
+    opacity: 1;
+    font-weight: bold;
+  }
+  /****Customer Satisfiction End****/ 
+  /*****  <!-- Contact Info -->***/
+  .locat{
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    margin-top: 20px;
+    float: left;
+  }
+  .info{
+    padding: 50px;
+    color: #794510;
+    font-weight: bold;
+  }
+  .info p{
+    color: #794510;
+    font-weight: bold;
+  }
+  .social-info p a, div a i{
+    color: #794510 !important;
+  }
+  .arrow{
+    margin-left:100% ;
+   bottom : 10px;
+    text-align: center;
+    color: black;
+    width:60px;
+    height: 40px;
+    font-size: 2rem;
+    border:2px solid black;
+    line-height:1.2;
+  }
+  /***  <!-- Contact Info End-->***/
+  /* :: 13.0 Footer Area CSS */
+
+.footer-area {
+  position: relative;
+  z-index: 1;
+  background-color: #363636;
+  padding-bottom: 40px; 
+  display: flex;
+  flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;  
+}
+  
+  .footer-area .footer-widget-area {
+    color: #ffffff;
+    font-weight: 400px;
+    width:100%;
+
+
+  }
+  .footer-area .footer-widget-area h4 
+  {
+    color: lightgrey;
+    font-size: 18px;
+
+  }
+  .footer-area .footer-widget-area .subscribe-form {
+    position: relative;
+    z-index: 1; 
+    }
+    .footer-area .footer-widget-area .subscribe-form input {
+      width: 100%;
+      height: 46px;
+      margin-top:22px;
+      background-color: transparent;
+      border: 2px solid #cb8670;
+      padding: 0 15px;
+      color: #ffffff; 
+    }
+    .footer-area .footer-widget-area .subscribe-form button {
+      -webkit-transition-duration: 500ms;
+      transition-duration: 500ms;
+      width: 100%;
+      height: 46px;
+      border: none;
+      font-size: 16px;
+      margin-top: 15px;
+      color: #ffffff;
+      cursor: pointer;
+      background-color: #cb8670; }
+      .footer-area .footer-widget-area .subscribe-form button:hover, .footer-area .footer-widget-area .subscribe-form button:focus
+        {
+          background-color: #363636;
+        }
+  .footer-area .copywrite-text {
+    position: relative;
+    z-index: 1; 
+    padding: 10px;
+  }
+    .footer-area .copywrite-text h4 {
+      margin-bottom: 0;
+      line-height: 1.5;
+      font-size: 15px;
+      color: rgba(204, 204, 204, 0.4); }
+      .footer-area .copywrite-text h4 a {
+        font-size: 15px;
+        color: rgba(204, 204, 204, 0.4); }
+        .footer-area .copywrite-text h4 a:hover {
+          color: #ffffff; 
+        }
+    .button{
+      background-color: #363636;
+      border: none;
+      margin-top:-30px;
+      margin-right: 20px;
+      color:white;
+      float:right; 
+    }
+    .text-area{
+      border:2px solid #cb8670; 
+      background-color: #363636; 
+      color:white;
+    }
+    .text-area:focus{
+      background-color:#363636;
+      color:white;
+     
+    }
+    footer h4,p,h5,ul,li a
+    {
+      color:lightgrey;
+    }
+    h4,ul,li a:hover{
+      color:white;
+    }
+   #line{
+          margin-top: 50px;
+          border-right:1px solid gray;
+        }
+
+        .drop-div-footer{
+          background-image: linear-gradient(rgba(80, 79, 78, 0.329),#363636);
+          border-radius: 5px;
+          opacity: 0.7;
+        }
+      
+        .drop-div-footer a:hover{
+          background-image: linear-gradient(rgba(80, 79, 78, 0.329),#363636);
+          color:white;
+          border: 5px solid grey;
+          opacity: 1 !important;
+        }
+    /*Foooter End*/
+
+    /***** About Us Start****/
+    .about-div{
+      padding: 20px;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      border:2px solid #cb8670;
+    }
+    .about-div p{
+      color:#794510;
+      text-align: center;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+    .img{
+      width: 450px;
+      height:550px;
+      background-color: aqua;
+      border:2px solid #cb8670;
+      margin-top: 100px;
+    }
+    /***** About Us End *****/
+
+
+    /******Sign Up Form*******/
+
+    
+.contact-form-area {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+  z-index: 1; 
+}
+  .contact-form-area form {
+    position: relative;
+    z-index: 1; 
+  }
+    .contact-form-area form input, .contact-form-area form textarea {
+      -webkit-transition-duration: 500ms;
+      transition-duration: 500ms;
+      border: none;
+      border-bottom: 2px solid #c9c9c9;
+      margin-bottom: 30px;
+      font-size: 12px;
+      font-style: italic;
+      color: #7d7d7d;
+      border-radius: 0;
+      width: 100%;
+      height: 52px;
+    }
+      .contact-form-area form input:focus, .contact-form-area form textarea:focus {
+        border-color: #cb8670;
+        box-shadow: none; 
+      }
+    .contact-form-area form textarea {
+      height: 180px; 
+    }
+
+    /****Sign Up Form End****/
+
+    /****Login Form Start****/
+
+.cont{
+  width: 430px;
+  height: auto;
+}
+
+.sp_sign{
+	color:#cb8670;
+}
+.login_cont h3{
+	/* margin-left: 480px; */
+}
+.face{
+	width:305px;
+	height:50px;
+	border-radius:10px;
+	background-color: #3b5998;
+	padding: 10px;
+	padding-left:10px;
+	color:white;
+	margin-left: 30px;
+}
+.icon{
+	font-size:px;
+	color:white !important;
+  margin: 0;
+  margin-left: -250px;
+}
+.sp_face{
+	color:white;
+	margin-left:30px;
+	margin-top: -27px;
+}
+.insta{
+	width:305px;
+	height:50px;
+	border-radius:10px;
+	background-color: #1da1f2;
+	color:white;
+	padding: 10px;
+  padding-left:10px;
+  margin-top: 30px;
+	margin-left: 30px;
+}
+
+.insta:hover{
+		border:3px groove #cb8670;
+		
+}
+.face:hover{
+		border:3px groove #cb8670;
+		
+}
+
+
+.sub{
+	width:340px;
+	height:50px;
+	background-color:#cb8670;
+	padding: 10px;
+	padding-left:10px;
+  color:white;
+  border: 2px solid #794510;
+  margin-top: -120px;
+	border:1px solid #cb8670;
+}
+
+   /***Login Form End*****/
